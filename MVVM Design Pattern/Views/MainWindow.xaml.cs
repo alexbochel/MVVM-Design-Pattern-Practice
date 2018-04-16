@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_Design_Pattern.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MVVM_Design_Pattern
+namespace MVVM_Design_Pattern.Views
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -23,6 +24,7 @@ namespace MVVM_Design_Pattern
 		public MainWindow()
 		{
 			InitializeComponent();
+			DataContext = new TriathleteViewModel();
 		}
 	}
 }
