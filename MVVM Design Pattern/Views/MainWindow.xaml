@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="400">
 	<StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
 		<Label>Triathlete Name: </Label>
-		<TextBox Text="{Binding Triathlete.TriathleteName}" Width="200" />
-		<Button>Update</Button>
+		<TextBox Text="{Binding Triathlete.TriathleteName, UpdateSourceTrigger=PropertyChanged}" Width="200" />
+		<Button Command="{Binding UpdateCommand}">Update</Button>
 	</StackPanel>
 </Window>
