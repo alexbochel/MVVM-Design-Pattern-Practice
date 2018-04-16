@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,7 +47,9 @@ namespace MVVM_Design_Pattern.ViewModels
 
 		public void SaveChanges()
 		{
-
+			//Triathlete.TriathleteName = updatedTriathleteName; TODO: Why do I not need this?
+			Debug.WriteLine("Updating name to: " + Triathlete.TriathleteName);
 		}
+
 	}
 }

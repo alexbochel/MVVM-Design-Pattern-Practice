@@ -1,5 +1,4 @@
-﻿
-using MVVM_Design_Pattern.ViewModels;
+﻿using MVVM_Design_Pattern.ViewModels;
 using System;
 using System.Windows.Input;
 
